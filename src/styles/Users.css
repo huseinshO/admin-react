@@ -1,0 +1,219 @@
+
+.users-page {
+    width: 100%;
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.users-header h2 {
+    color: #172554;
+    font-weight: bold;
+}
+
+.users-header p {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.add-user-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-user-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.users-count {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.users-count h5 {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.users-count h3 {
+    color: #172554;
+    font-weight: bold;
+    margin: 0;
+}
+
+.users-search {
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.users-search i {
+    color: #64748b;
+}
+
+.users-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.users-table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.users-table-container table {
+    min-width: 700px;
+}
+
+.users-table-container thead th {
+    color: #64748b;
+    background-color: #f8fafc;
+    font-size: 13px;
+}
+
+.users-table-container tbody td {
+    color: #334155;
+    padding: 15px 10px;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.active-status {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.inactive-status {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.delete-btn {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+/* Modal */
+.user-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 15px;
+}
+
+.user-modal-content {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-header-custom h4 {
+    color: #172554;
+    font-weight: bold;
+}
+
+.close-modal-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.user-modal-content label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.cancel-btn,
+.save-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.save-btn {
+    background-color: #2563eb;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .users-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .users-count {
+        width: 100%;
+    }
+}
